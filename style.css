@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  overflow: hidden;
+  margin: 0;
+  height: 100vh;
+  background-color: #a6caf0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+    display: flex;
+    padding: 0 20px;
+    width: 100%;
+
+}
+
+.slide {
+    position: relative;
+    margin: 10px;
+    height: 80vh;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.6s all ease-in-out;
+}
+
+.slide-title {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    font-size: 36px;
+    color: black;
+    opacity: 0;
+}
+
+.slide__horse {
+    background-image: url('https://images.unsplash.com/photo-1553284965-fa61e9ad4795?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80');
+}
+
+.slide__mouse {
+    background-image: url('https://images.unsplash.com/photo-1516247897763-0f4ad94c2668?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=811&q=80'
+    );
+}
+
+.slide__cat {
+    background-image: url('https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=929&q=80');
+}
+
+.slide__dog {
+    background-image: url('https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80');
+}
+
+.slide__parrot {
+    background-image: url('https://images.unsplash.com/photo-1606383068250-4ac2043f4ff5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+}
+
+.slide_active {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 10;
+}
+
+.slide_active .slide-title {
+    opacity: 1;
+    transition: opacity 0.5s ease-in 0.4ms;
+}
+
+
+
